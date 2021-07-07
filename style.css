@@ -147,54 +147,40 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 480px){
-  .logo{
-    font-size: 72px;
-  }
-  .group{
+@media all and (min-width: 800px) {
+  header {
     display: flex;
-    flex-direction: row;
-  }
-
-  form .group{
-    flex-direction: column;
-  }
-
-  form .item{
-    flex-direction: column;
-    flex: 2;
-  }  
-  form button{
-    flex: 1;
-  }
-
-  .group-idea {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .item1 {
-    width: 49%;
-  }
-}
-@media all and (min-width: 700px){
-  header{
-    display:flex;
     justify-content: space-between;
     padding: 0 30px;
   }
-  header .logo{
-    margin: 14px 0;
-    padding-top: 0;
-  }
+
   header nav {
-    margin-top: 30px;
+    align-items: center;
   }
-}
-  @media all and (min-width: 970px){ 
-  form .group{
+
+  .form {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 0%;
+    width: 100%;
+  }
+  .group {
+    flex-direction: row;
+  }
+
+  .form-item {
+    flex-direction: column;
+  }
+
+  /*add to type form*/
+  .add-width {
+    width: 15%;
   }
 }
