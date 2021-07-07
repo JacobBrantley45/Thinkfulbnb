@@ -31,37 +31,40 @@
     </header>
 
     <main>
-      <!-- Stay -->
+       <!-- Stay -->
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
-        <form>
-            <div class="group">
-            <div class="item">
-              <label for="location">Location</label>  
-              <input id="location" type="text" name="location" placeholder="Search destination"/>
-            </div>
-            <div class="item">
-              <label for="arrive">Arrive</label>
-              <input type="date" id="arrive" name="arrival-date"/>
-            </div>
-            <div class="item">
-              <label for="depart">Depart</label>
-              <input type="date" id="depart" name="departure-date"/>
-            </div>
-            <div class="item">
-              <label for="type">Type</label>
-              <select name="type" size="1">
-                <option value="apartment">Apartment</option>
-                <option value="barn">Barn</option>
-                <option value="castle">Castle</option>
-                <option value="houseboat">Houseboat</option>
-                <option value="tiny_house">Tiny House</option>
-                <option value="yacht">Yacht</option>
-                <option value="Yurt">Yurt</option>
-              </select> 
-            </div>
-            <button type="submit">Search</button>
+        <form class="form">
+          <div class="form-item">
+            <label for="location">Location</label>
+            <input
+              id="location"
+              type="text"
+              name="location"
+              autofocus="on"
+              required
+              placeholder="Search destination"
+              class="location"
+            />
+          </div>
+          <div class="form-item">
+            <label for="date">Arrive</label>
+            <input type="date" class="arrive" id="date" name="date" required />
+          </div>
+          <div class="form-item">
+            <label for="date">Depart </label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-item add-width">
+            <label for="drop-down-menu"> Type</label>
+            <select name="fonts" size="1" class="type">
+              <option value="Apartment">Apartment</option>
+              <option value="House">House</option>
+            </select>
+          </div>
+          <div>
+            <button type="search">Search</button>
           </div>
         </form>
       </section>
